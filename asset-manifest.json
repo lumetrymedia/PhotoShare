@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/PhotoShare/static/css/main.a712ccee.css",
+    "main.js": "/PhotoShare/static/js/main.6cb0a52b.js",
+    "static/js/453.ed3810f9.chunk.js": "/PhotoShare/static/js/453.ed3810f9.chunk.js",
+    "static/media/Lumetry.svg": "/PhotoShare/static/media/Lumetry.539082da0a399aee36a536bfe723c6ec.svg",
+    "index.html": "/PhotoShare/index.html",
+    "main.a712ccee.css.map": "/PhotoShare/static/css/main.a712ccee.css.map",
+    "main.6cb0a52b.js.map": "/PhotoShare/static/js/main.6cb0a52b.js.map",
+    "453.ed3810f9.chunk.js.map": "/PhotoShare/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a712ccee.css",
+    "static/js/main.6cb0a52b.js"
+  ]
+}
