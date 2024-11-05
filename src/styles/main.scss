@@ -1,0 +1,124 @@
+// Example: Custom styles using Kanit font
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-sans bg-neutral-900 text-neutral-50;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.custom-button {
+    @apply px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600;
+}
+
+@layer components {
+    .heading-1 {
+        @apply text-5xl font-extrabold leading-tight mb-4;
+    }
+
+    .heading-2 {
+        @apply text-4xl font-bold leading-8 mb-3;
+    }
+
+    .heading-3 {
+        @apply text-3xl font-semibold mb-2;
+    }
+
+    .heading-4 {
+        @apply text-2xl font-medium mb-2;
+    }
+
+    .heading-5 {
+        @apply text-xl font-medium mb-1;
+    }
+
+    .heading-6 {
+        @apply text-lg font-normal mb-1;
+    }
+}
+
+@layer base {
+    :root {
+        --background: @apply bg-neutral-900;
+        --foreground: @apply text-nes-neutral-50;
+
+        --muted: @apply bg-neutral-800;
+        --muted-foreground: @apply bg-neutral-50;
+
+        --popover: @apply bg-neutral-50;
+        --popover-foreground: @apply bg-neutral-800;
+
+        --border: @apply bg-neutral-700;
+        --input: @apply bg-neutral-700;
+
+        --card: @apply bg-neutral-800;
+        --card-foreground: @apply bg-neutral-50;
+
+        --primary: #870000;
+        --primary-foreground: @apply bg-neutral-50;
+
+        --secondary: #870000;
+        --secondary-foreground: @apply bg-neutral-50;
+
+        --accent: #870000;
+        --accent-foreground: 222.2 47.4% 11.2%;
+
+        --destructive: #870000;
+        --destructive-foreground: @apply bg-neutral-50;
+
+        --ring: #870000;
+
+        --radius: 0.4rem;
+    }
+
+    .dark {
+        --background: @apply bg-neutral-900;
+        --foreground: @apply text-nes-neutral-50;
+
+        --muted: @apply bg-neutral-800;
+        --muted-foreground: @apply bg-neutral-50;
+
+        --popover: @apply bg-neutral-50;
+        --popover-foreground: @apply bg-neutral-800;
+
+        --border: @apply bg-neutral-700;
+        --input: @apply bg-neutral-700;
+
+        --card: @apply bg-neutral-800;
+        --card-foreground: @apply bg-neutral-50;
+
+        --primary: #870000;
+        --primary-foreground: @apply bg-neutral-50;
+
+        --secondary: 210 40% 96.1%;
+        --secondary-foreground: @apply bg-neutral-50;
+
+        --accent: 210 40% 96.1%;
+        --accent-foreground: 222.2 47.4% 11.2%;
+
+        --destructive: #870000;
+        --destructive-foreground: @apply bg-neutral-50;
+
+        --ring: #870000;
+
+        --radius: 0.4rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
